@@ -1,0 +1,52 @@
+//
+//  UtilsMacro.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/11/20.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+//UtilsMacro.h 里放的是一些方便使用的宏定义
+
+#ifndef UtilsMacro_h
+#define UtilsMacro_h
+
+
+//******************************************************************************//
+//******************************MD5 长度相关**************************************//
+#define MD5_LENGTH_16    16
+#define MD5_LENGTH_32    32
+
+//******************************************************************************//
+//******************************数据存储相关**************************************//
+// 缓存表
+static NSString *const LI_CACHE_TABLE = @"li_cache_table";
+// 获取用户信息
+static NSString *const LI_USER_INFO = @"LI_USER_INFO";
+
+#pragma mark -
+// 存储总资产
+static NSString *const LI_USER_TOTAL_FUND = @"LI_USER_TOTAL_FUND";
+// 领投人N系数
+static NSString *const LI_USER_LEADER_MODULUS = @"LI_USER_LEADER_MODULUS";
+
+
+#pragma mark - 交易和自选
+// k线指标类型
+static NSString *const LI_KLine_TAG = @"LI_KLine_TAG";
+// 自选股票
+static NSString *const LI_OPTIONAL_STOCKS = @"LI_OPTIONAL_STOCKS";
+// 自选组合
+static NSString *const LI_OPTIONAL_COMBINATIONS = @"LI_OPTIONAL_COMBINATIONS";
+//  个股持仓
+static NSString *const LI_SINGLE_STOCKS = @"LI_SINGLE_STOCKS";
+//  组合持仓
+static NSString *const LI_CURRENT_COMBI_STOCKS = @"LI_CURRENT_COMBI_STOCKS";
+//跟投,领投组合
+static NSString *const LI_CURRENT_COMBI = @"LI_CURRENT_COMBI";
+//  键盘精灵搜索记录
+static NSString *const LI_SEARCHISTORY_STOCKS = @"LI_SEARCHISTORY_STOCKS";
+
+//******************************************************************************//
+//******************************abcd相关**************************************//
+
+#endif /* UtilsMacro_h */

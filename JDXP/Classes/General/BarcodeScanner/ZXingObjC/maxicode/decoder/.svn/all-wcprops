@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder
+END
+ZXMaxiCodeDecodedBitStreamParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder/ZXMaxiCodeDecodedBitStreamParser.h
+END
+ZXMaxiCodeBitMatrixParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder/ZXMaxiCodeBitMatrixParser.h
+END
+ZXMaxiCodeDecodedBitStreamParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder/ZXMaxiCodeDecodedBitStreamParser.m
+END
+ZXMaxiCodeBitMatrixParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder/ZXMaxiCodeBitMatrixParser.m
+END
+ZXMaxiCodeDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder/ZXMaxiCodeDecoder.h
+END
+ZXMaxiCodeDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/maxicode/decoder/ZXMaxiCodeDecoder.m
+END

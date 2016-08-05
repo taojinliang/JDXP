@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/multi
+END
+ZXGenericMultipleBarcodeReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/multi/ZXGenericMultipleBarcodeReader.h
+END
+ZXByQuadrantReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/multi/ZXByQuadrantReader.h
+END
+ZXMultipleBarcodeReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/multi/ZXMultipleBarcodeReader.h
+END
+ZXGenericMultipleBarcodeReader.m
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/multi/ZXGenericMultipleBarcodeReader.m
+END
+ZXByQuadrantReader.m
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/multi/ZXByQuadrantReader.m
+END

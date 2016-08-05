@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon
+END
+ZXGenericGF.h
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXGenericGF.h
+END
+ZXReedSolomonEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXReedSolomonEncoder.m
+END
+ZXReedSolomonDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXReedSolomonDecoder.h
+END
+ZXGenericGFPoly.h
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXGenericGFPoly.h
+END
+ZXGenericGF.m
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXGenericGF.m
+END
+ZXReedSolomonDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXReedSolomonDecoder.m
+END
+ZXGenericGFPoly.m
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXGenericGFPoly.m
+END
+ZXReedSolomonEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/reedsolomon/ZXReedSolomonEncoder.h
+END

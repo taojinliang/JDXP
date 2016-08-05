@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core
+END
+ZXBarcodeFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXBarcodeFormat.h
+END
+ZXEncodeHints.m
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXEncodeHints.m
+END
+ZXResultMetadataType.h
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXResultMetadataType.h
+END
+ZXRGBLuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXRGBLuminanceSource.h
+END
+ZXByteMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXByteMatrix.h
+END
+ZXDecodeHints.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXDecodeHints.h
+END
+ZXRGBLuminanceSource.m
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXRGBLuminanceSource.m
+END
+ZXByteMatrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXByteMatrix.m
+END
+ZXInvertedLuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXInvertedLuminanceSource.h
+END
+ZXDecodeHints.m
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXDecodeHints.m
+END
+ZXReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXReader.h
+END
+ZXInvertedLuminanceSource.m
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXInvertedLuminanceSource.m
+END
+ZXWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXWriter.h
+END
+ZXErrors.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXErrors.h
+END
+ZXResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXResult.h
+END
+ZXBinaryBitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXBinaryBitmap.h
+END
+ZXErrors.m
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXErrors.m
+END
+ZXResult.m
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXResult.m
+END
+ZXingObjCCore.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXingObjCCore.h
+END
+ZXBinarizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXBinarizer.h
+END
+ZXDimension.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXDimension.h
+END
+ZXBinaryBitmap.m
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXBinaryBitmap.m
+END
+ZXResultPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXResultPoint.h
+END
+ZXBinarizer.m
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXBinarizer.m
+END
+ZXDimension.m
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXDimension.m
+END
+ZXLuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXLuminanceSource.h
+END
+ZXResultPoint.m
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXResultPoint.m
+END
+ZXPlanarYUVLuminanceSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXPlanarYUVLuminanceSource.h
+END
+ZXLuminanceSource.m
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXLuminanceSource.m
+END
+ZXPlanarYUVLuminanceSource.m
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXPlanarYUVLuminanceSource.m
+END
+ZXEncodeHints.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXEncodeHints.h
+END
+ZXResultPointCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/core/ZXResultPointCallback.h
+END

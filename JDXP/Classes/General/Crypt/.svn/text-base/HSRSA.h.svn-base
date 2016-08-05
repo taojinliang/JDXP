@@ -1,0 +1,15 @@
+//
+//  HSRSA.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/8/24.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface HSRSA : NSObject
+
++ (NSString *)RSAEncryptWithData:(const char *)input Modulus:(const char *)m Exponent:(const char *)e;
+
+@end

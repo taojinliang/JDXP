@@ -1,0 +1,111 @@
+//
+//  LIUserManager.h
+//  LIGHTinvesting-leader
+//
+//  Created by Deng on 15/7/27.
+//  Copyright (c) 2015年 hundsun. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSUInteger, CurrentState) {
+    CurrentState_Ordinary = 0,
+    CurrentState_Leader,
+    CurrentState_Follower,
+};
+
+@interface LIUserManager : NSObject
+
++ (LIUserManager *)getInstance;
+
+// 是否已登录
+- (BOOL)isAlreadyLogin;
+// 是否绑定交易账号
+- (BOOL)isBindTradeAccount;
+// 用户当前状态 0：没有跟投也没有领投，1：领投，2：跟投
+- (CurrentState)userCurrentState;
+// 清楚全部缓存数据
+- (void)clearUserInfo;
+
+// 用户信息
+- (void)saveUserInfo:(NSDictionary *)userInfo;
+- (NSDictionary *)getUserInfo;
+// 当前用户ID,用户唯一标识（既是服务器那边的 client_id）
+- (void)saveCurrentUserId:(NSString *)currentUserId;
+- (NSString *)getCurrentUserId;
+// 中台接口的验证token
+- (void)saveAccessToken:(NSString *)accessToken;
+- (NSString *)getAccessToken;
+// 用户昵称
+- (void)saveNickName:(NSString *)nickName;
+- (NSString *)getNickName;
+// 用户手机号码
+- (void)savePhoneNumber:(NSString *)phoneNumber;
+- (NSString *)getPhoneNumber;
+// 用户个性签名
+- (void)saveSignature:(NSString *)signature;
+- (NSString *)getSignature;
+// 用户邮箱
+- (void)saveEmail:(NSString *)email;
+- (NSString *)getEmail;
+// 用户头像地址
+- (void)saveHeadPictureUrl:(NSString *)headPictureUrl;
+- (NSString *)getHeadPictureUrl;
+// 用户当前创建组合ID
+- (void)saveCombinationId:(NSString *)combinationId;
+- (NSString *)getCombinationId;
+// 用户当前跟投组合ID
+- (void)saveFollowedCombinationId:(NSString *)followedCombinationId;
+- (NSString *)getFollowedCombinationId;
+// 用户资金账号信息
+- (void)saveFundAccountInfo:(NSDictionary *)fundAccountInfo;
+- (NSDictionary *)getFundAccountInfo;
+// 资金账号列表
+- (void)saveFundAccountList:(NSArray *)fundAccountList;
+- (NSArray *)getFundAccountList;
+// 性别
+- (void)saveGender:(NSNumber *)gender;
+- (NSNumber *)getGender;
+// 股龄
+- (void)saveStockAge:(NSNumber *)stockAge;
+- (NSNumber *)getStockAge;
+// 地区
+- (void)saveArea:(NSString *)area;
+- (NSString *)getArea;
+
+#pragma mark - 交易和自选
+
+// 原始k线指标类型
+- (void)saveKLineTag:(NSDictionary *)dic;
+- (NSDictionary *)getKLineTag;
+// 自选股票
+-(void)saveOptionalStocks:(NSMutableArray *)array;
+-(NSMutableArray *)getOptionalStocks;
+// 自选组合
+-(void)saveOptionalCombinations:(NSMutableArray *)array;
+-(NSMutableArray *)getOptionalCombinations;
+// 个股持仓
+-(void)saveSingleStocks:(NSMutableArray *)array;
+-(NSMutableArray *)getSingleStocks;
+// 组合持仓
+-(void)saveCurrentCombinationStocks:(NSMutableArray *)array;
+-(NSMutableArray *)getCurrentCombinationStocks;
+// 跟投,领投组合（编号，名称，组合盈亏金额，组合盈亏比例）
+- (void)saveCurrentCombination:(NSDictionary *)dic;
+- (NSDictionary *)getCurrentCombination;
+// 键盘精灵搜索记录
+-(void)saveSearchHistoryStocks:(NSMutableArray *)array;
+-(NSMutableArray *)getSearchHistoryStocks;
+
+
+#pragma mark - 
+// 存储总资产
+- (void)saveTotalFund:(NSDictionary *)dic;
+- (NSDictionary *)getTotalFund;
+
+// 领投人N系数
+- (void)saveLeaderModulus:(NSString *)leaderModulus;
+- (NSString *)getLeaderModulus;
+
+@end

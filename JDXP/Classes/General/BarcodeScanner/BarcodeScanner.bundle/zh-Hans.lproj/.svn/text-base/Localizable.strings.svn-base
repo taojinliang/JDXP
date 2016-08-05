@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  HSBarcodeScanner
+
+  Created by LingBinXing on 15/5/25.
+  Copyright (c) 2015年 hundsun. All rights reserved.
+*/
+
+"QRHint" = "将方框对准二维码，即可自动扫描";
+"btnCancel" = "取消";
+"QRbtntorch" = "补光灯";
+"QRbtnlocal" = "相册";
+"QRGenError" = "二维码生成失败。";
+"QRLocalFail" = "本地图片识别失败，请确认选择的图片是有效的二维码图片。";
+"QRDecryptFail" = "无效的二维码名片。二维码内容：\n%@";
+
+"camera_no_permission_msg_old" = "请在设备的“设置-隐私”选项中，允许应用访问你的摄像头";
+"camera_no_permission_msg_new" = "请允许应用访问你的摄像头";
+"camera_no_permission_ok" = "确定";
+"camera_no_permission_cancel" = "取消";
+"camera_no_permission_setting" = "设置";
+

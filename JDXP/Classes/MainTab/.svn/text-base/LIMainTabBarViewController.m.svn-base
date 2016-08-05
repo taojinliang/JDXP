@@ -1,0 +1,116 @@
+//
+//  LIMainTabBarViewController.m
+//  LIGHTinvesting
+//
+//  Created by Deng on 15/8/25.
+//  Copyright (c) 2015年 Hundsun. All rights reserved.
+//
+
+#import "LIMainTabBarViewController.h"
+#import "LIAppUtils.h"
+
+#import "LIGeniusViewController.h"
+#import "LIDynamicViewController.h"
+#import "LITradeViewController.h"
+#import "LIOptionalViewController.h"
+
+@interface LIMainTabBarViewController ()
+
+@end
+
+@implementation LIMainTabBarViewController
+
+#pragma mark - life cycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    /*
+    UINavigationController *nav1 = [[UINavigationController alloc] init];
+    LIGeniusViewController *vc1 = [[LIGeniusViewController alloc] init];
+    vc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"牛人" image:[UIImage imageNamed:@"home_tab_home_n"] selectedImage:[UIImage imageNamed:@"home_tab_home_h"]];
+    vc1.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0, -4.0);
+    vc1.tabBarItem.imageInsets = UIEdgeInsetsMake(-2.0, 0.0, 2.0, 0.0);
+    nav1.viewControllers = [NSArray arrayWithObjects:vc1, nil];
+    nav1.navigationBarHidden = YES;
+    
+    UINavigationController *nav2 = [[UINavigationController alloc] init];
+    LIDynamicViewController *vc2 = [[LIDynamicViewController alloc] init];
+    vc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"动态" image:[UIImage imageNamed:@"home_tab_portfolio_n"]selectedImage:[UIImage imageNamed:@"home_tab_portfolio_h"]];
+    vc2.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0, -4.0);
+    vc2.tabBarItem.imageInsets = UIEdgeInsetsMake(-2.0, 0.0, 2.0, 0.0);
+    nav2.viewControllers = [NSArray arrayWithObjects:vc2, nil];
+    nav2.navigationBarHidden = YES;
+    
+    UINavigationController *nav3 = [[UINavigationController alloc] init];
+    LITradeViewController *vc3 = [[LITradeViewController alloc] init ];
+    vc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"交易" image:[UIImage imageNamed:@"home_tab_trading_n"]selectedImage:[UIImage imageNamed:@"home_tab_trading_h"]];
+    vc3.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0, -4.0);
+    vc3.tabBarItem.imageInsets = UIEdgeInsetsMake(-2.0, 0.0, 2.0, 0.0);
+    nav3.viewControllers = [NSArray arrayWithObjects:vc3, nil];
+    nav3.navigationBarHidden = YES;
+    
+    UINavigationController *nav4 = [[UINavigationController alloc] init];
+    LIOptionalViewController *vc4 = [[LIOptionalViewController alloc] init ];
+    vc4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"自选" image:[UIImage imageNamed:@"home_tab_trading_n"]selectedImage:[UIImage imageNamed:@"home_tab_trading_h"]];
+    vc4.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0, -4.0);
+    vc4.tabBarItem.imageInsets = UIEdgeInsetsMake(-2.0, 0.0, 2.0, 0.0);
+    nav4.viewControllers = [NSArray arrayWithObjects:vc4, nil];
+    nav4.navigationBarHidden = YES;
+    
+
+    self.viewControllers = [NSArray arrayWithObjects:nav1, nav2,nav3,nav4,nil];
+    self.tabBar.tintColor = [LIAppUtils colorFromRGB:0xd3b581];
+    self.tabBar.backgroundColor = [UIColor clearColor];
+    self.tabBar.backgroundImage = [UIImage imageNamed:@"home_tab_bottom"];
+    self.selectedIndex = 0;
+     */
+    
+    LIGeniusViewController *vc1 = [[LIGeniusViewController alloc] init];
+    [self setUpOneChildViewController:vc1 normalImage:[UIImage imageNamed:@"liTab_genius_n"] selectedImage:[UIImage imageNamed:@"liTab_genius_h"] title:@"牛人"];
+    
+    LIDynamicViewController *vc2 = [[LIDynamicViewController alloc] init];
+    [self setUpOneChildViewController:vc2 normalImage:[UIImage imageNamed:@"liTab_dynamic_n"] selectedImage:[UIImage imageNamed:@"liTab_dynamic_h"] title:@"动态"];
+    
+    LITradeViewController *vc3 = [[LITradeViewController alloc] init];
+    [self setUpOneChildViewController:vc3 normalImage:[UIImage imageNamed:@"liTab_trade_n"] selectedImage:[UIImage imageNamed:@"liTab_trade_h"] title:@"交易"];
+    
+    LIOptionalViewController *vc4 = [[LIOptionalViewController alloc] init];
+    [self setUpOneChildViewController:vc4 normalImage:[UIImage imageNamed:@"liTab_optional_n"] selectedImage:[UIImage imageNamed:@"liTab_optional_h"] title:@"自选"];
+    
+    self.tabBar.tintColor = [LIAppUtils colorFromRGB:0xF75300];
+    self.tabBar.backgroundColor = [UIColor whiteColor];
+    self.selectedIndex = 0;
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - private mothed
+
+- (void)setUpOneChildViewController:(UIViewController *)viewController normalImage:(UIImage *)normalImage selectedImage:(UIImage *)selectedImage title:(NSString *)title {
+    
+    viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:normalImage selectedImage:selectedImage];
+//        viewController.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0, -4.0);
+//        viewController.tabBarItem.imageInsets = UIEdgeInsetsMake(-2.0, 0.0, 2.0, 0.0);
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    nav.navigationBarHidden = YES;
+    
+    [self addChildViewController:nav];
+}
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+@end

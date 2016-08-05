@@ -1,0 +1,71 @@
+//
+//  LIHttpClient.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/7/25.
+//  Copyright (c) 2015年 Hundsun. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "HsStock.h"
+
+/*请求状态 0: 成功, 其他失败*/
+static const NSInteger LI_TRADE_FIELD_ERROR_NO_SUCCESS = 0;
+
+/// 特定格式中出错时，/*请求状态 0: 成功, 其他失败*/
+static NSString* const kLIErrorKey_No    = @"error_no";
+/// 网络请求失败时，，服务器返回的`info`节点信息
+static NSString* const kLIErrorKey_ErrorInfo   = @"error_info";
+
+
+typedef void (^HTTP_StockInfoCompletion)
+( // 股票个股基本信息
+ HsStock* StockInfo,
+ NSError* error
+ );
+
+typedef void (^HTTP_StockQuoteInfoCompletion)
+( // 股票行情基本信息
+ NSMutableArray* realtimeModels,
+ NSError* error
+ );
+
+
+@interface LIHttpClient : NSObject
+
+
++(LIHttpClient*)shareManager;
+
+
+/*!
+ *@brief 发送统一封装请求  post方式
+ *@param functionID:请求接口   reqdict:请求字典  block:回调函数
+ */
+-(void)sendRequest:(NSString *)functionID  withDictionary:(NSDictionary *)reqdict completionHandler:(void (^)(NSInteger errorNo,NSDictionary *dict)) block;
+
+
+/*!
+ *@brief 行情股票资讯：发送统一封装请求  get方式
+ *@param requestUrl:请求地址   block:回调函数
+ */
+-(void)sendRequest:(NSString *)requestUrl  completionHandler:(void (^)(NSInteger errorNo,NSDictionary *dict)) block;
+
+/**
+ *  @brief  一支股票个股基本信息
+ *  @param completion 回调
+ */
++ (void)requestStockInfoWithCompletion:(NSString *)queryString Completion:(HTTP_StockInfoCompletion)completion;
+
+/**
+ *  @brief  一支股票行情基本信息
+ *  @param completion 回调
+ */
++ (void)requestStockQuoteInfoWithCompletion:(HsStock *)stock Completion:(HTTP_StockQuoteInfoCompletion)completion;
+
+/**
+ *  @brief  多支股票行情基本信息
+ *  @param completion 回调
+ */
++ (void)requestStocksQuoteInfoWithCompletion:(NSArray *)stocks Completion:(HTTP_StockQuoteInfoCompletion)completion;
+
+@end

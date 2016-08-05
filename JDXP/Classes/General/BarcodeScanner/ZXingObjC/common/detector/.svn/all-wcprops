@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector
+END
+ZXMathUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector/ZXMathUtils.h
+END
+ZXMonochromeRectangleDetector.m
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector/ZXMonochromeRectangleDetector.m
+END
+ZXMathUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector/ZXMathUtils.m
+END
+ZXWhiteRectangleDetector.h
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector/ZXWhiteRectangleDetector.h
+END
+ZXWhiteRectangleDetector.m
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector/ZXWhiteRectangleDetector.m
+END
+ZXMonochromeRectangleDetector.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/common/detector/ZXMonochromeRectangleDetector.h
+END

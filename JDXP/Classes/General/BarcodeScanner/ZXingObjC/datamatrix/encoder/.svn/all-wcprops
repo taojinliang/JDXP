@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder
+END
+ZXDataMatrixASCIIEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixASCIIEncoder.h
+END
+ZXDataMatrixEncoderContext.m
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixEncoderContext.m
+END
+ZXDataMatrixTextEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixTextEncoder.m
+END
+ZXDataMatrixC40Encoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixC40Encoder.m
+END
+ZXDataMatrixASCIIEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixASCIIEncoder.m
+END
+ZXDataMatrixEdifactEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixEdifactEncoder.h
+END
+ZXDataMatrixEdifactEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixEdifactEncoder.m
+END
+ZXDataMatrixHighLevelEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixHighLevelEncoder.h
+END
+ZXDataMatrixBase256Encoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixBase256Encoder.h
+END
+ZXDataMatrixSymbolInfo144.h
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixSymbolInfo144.h
+END
+ZXDataMatrixX12Encoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixX12Encoder.h
+END
+ZXDataMatrixBase256Encoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixBase256Encoder.m
+END
+ZXDataMatrixHighLevelEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixHighLevelEncoder.m
+END
+ZXDataMatrixDefaultPlacement.h
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixDefaultPlacement.h
+END
+ZXDataMatrixEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixEncoder.h
+END
+ZXDataMatrixSymbolInfo144.m
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixSymbolInfo144.m
+END
+ZXDataMatrixX12Encoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixX12Encoder.m
+END
+ZXDataMatrixErrorCorrection.h
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixErrorCorrection.h
+END
+ZXDataMatrixSymbolInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixSymbolInfo.h
+END
+ZXDataMatrixDefaultPlacement.m
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixDefaultPlacement.m
+END
+ZXDataMatrixEncoderContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixEncoderContext.h
+END
+ZXDataMatrixTextEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixTextEncoder.h
+END
+ZXDataMatrixErrorCorrection.m
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixErrorCorrection.m
+END
+ZXDataMatrixC40Encoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixC40Encoder.h
+END
+ZXDataMatrixSymbolInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/encoder/ZXDataMatrixSymbolInfo.m
+END

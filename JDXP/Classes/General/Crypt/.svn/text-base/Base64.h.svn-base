@@ -1,0 +1,20 @@
+//
+//  Base64.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/8/24.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+
+
+#import <Foundation/Foundation.h>
+
+
+@interface Base64 : NSObject {
+    
+}
+
++ (NSData *)Base64EncodeWithChars:(const char*)lpszSrc  length:(int)length;
++ (NSData *)Base64DecodeWithChars:(const char*)lpszSrc;
+
+@end

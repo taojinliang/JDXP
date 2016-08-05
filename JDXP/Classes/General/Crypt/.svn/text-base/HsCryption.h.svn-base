@@ -1,0 +1,39 @@
+//
+//  HsCryption.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/8/24.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <openssl/md5.h>
+#import <openssl/des.h>
+#import <openssl/evp.h>
+#import <openssl/bio.h>
+
+
+#define kEncode 1
+#define kDecode 0
+
+#define k3DESKey @"HSbcsbcshsHSBCSBCSHShsbcsbcsHS"
+#define k3DESIV @"13264578"
+
+
+@interface HsCryption : NSObject {
+    
+}
+
++ (NSString *)calcMD5:(NSString *)input;
++ (NSString *)fileMD5:(NSData *)input;
++ (NSString *)encryptWithDES:(NSString *)input key:(NSString *)key;
++ (NSString *)decryptWithDES:(NSString *)input key:(NSString *)key;
++ (NSString *)encryptWithTripleDES:(NSString *)input key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;
++ (NSString *)decryptWithTripleDES:(NSString *)input key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;
++ (NSString *)encryptWith3DES:(NSString *)input key:(NSString *)key IV:(NSString *)IV;
++ (NSString *)decryptWith3DES:(NSString *)input key:(NSString *)key IV:(NSString *)IV;
++ (NSString *)encryptWith3DESUseDefaultStrategy:(NSString *)input;
+
++ (NSString *)encryptWithRSA:(NSString *)input Modulus:(NSString *)m Exponent:(NSString *)e;
+
+@end

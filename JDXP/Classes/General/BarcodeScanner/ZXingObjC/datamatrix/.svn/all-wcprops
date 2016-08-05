@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix
+END
+ZXingObjCDataMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/ZXingObjCDataMatrix.h
+END
+ZXDataMatrixWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/ZXDataMatrixWriter.h
+END
+ZXDataMatrixWriter.m
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/ZXDataMatrixWriter.m
+END
+ZXDataMatrixReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/ZXDataMatrixReader.h
+END
+ZXDataMatrixReader.m
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/datamatrix/ZXDataMatrixReader.m
+END

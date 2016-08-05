@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt
+END
+Base64.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/Base64.m
+END
+HsCode.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/HsCode.m
+END
+HSRSA.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/HSRSA.h
+END
+HsCryption.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/HsCryption.h
+END
+Base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/Base64.h
+END
+HSRSA.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/HSRSA.m
+END
+HsCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/HsCode.h
+END
+HsCryption.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/hsbc/ULI/!svn/ver/18/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/General/Crypt/HsCryption.m
+END

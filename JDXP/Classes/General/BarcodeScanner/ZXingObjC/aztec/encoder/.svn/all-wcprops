@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder
+END
+ZXAztecState.h
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecState.h
+END
+ZXAztecToken.h
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecToken.h
+END
+ZXAztecBinaryShiftToken.h
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecBinaryShiftToken.h
+END
+ZXAztecEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecEncoder.m
+END
+ZXAztecState.m
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecState.m
+END
+ZXAztecToken.m
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecToken.m
+END
+ZXAztecHighLevelEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecHighLevelEncoder.h
+END
+ZXAztecBinaryShiftToken.m
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecBinaryShiftToken.m
+END
+ZXAztecCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecCode.h
+END
+ZXAztecSimpleToken.h
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecSimpleToken.h
+END
+ZXAztecHighLevelEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecHighLevelEncoder.m
+END
+ZXAztecCode.m
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecCode.m
+END
+ZXAztecEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecEncoder.h
+END
+ZXAztecSimpleToken.m
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/aztec/encoder/ZXAztecSimpleToken.m
+END

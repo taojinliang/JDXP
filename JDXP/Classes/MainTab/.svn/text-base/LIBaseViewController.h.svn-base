@@ -1,0 +1,13 @@
+//
+//  LIBaseViewController.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/11/25.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LIBaseViewController : UIViewController
+
+@end

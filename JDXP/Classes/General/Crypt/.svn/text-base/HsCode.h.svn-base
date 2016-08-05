@@ -1,0 +1,23 @@
+//
+//  HsCode.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/8/24.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+
+
+#import <Foundation/Foundation.h>
+
+@interface HsCode : NSObject {
+    
+}
+
+//加密算法,请保证密钥长度是8,否则后果自负
++ (NSString *)decode3Des:(NSString *)input key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;
++ (NSString *)encode3Des:(NSString *)input key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;
+
++ (NSData *)dataEncode3Des:(NSData *)input key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;
+
++ (NSData *)dataDecode3Des:(NSData *)input key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;
+@end

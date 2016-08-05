@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder
+END
+ZXQRCodeMaskUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeMaskUtil.h
+END
+ZXQRCodeBlockPair.m
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeBlockPair.m
+END
+ZXQRCodeMaskUtil.m
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeMaskUtil.m
+END
+ZXQRCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCode.h
+END
+ZXQRCodeEncoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeEncoder.h
+END
+ZXQRCodeMatrixUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeMatrixUtil.h
+END
+ZXQRCode.m
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCode.m
+END
+ZXQRCodeEncoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeEncoder.m
+END
+ZXQRCodeBlockPair.h
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeBlockPair.h
+END
+ZXQRCodeMatrixUtil.m
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/qrcode/encoder/ZXQRCodeMatrixUtil.m
+END

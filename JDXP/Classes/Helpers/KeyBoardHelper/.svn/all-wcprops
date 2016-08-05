@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper
+END
+LIKeyBoardViewManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper/LIKeyBoardViewManager.h
+END
+UIKeyboardObserveManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper/UIKeyboardObserveManager.h
+END
+LIKeyBoardViewManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper/LIKeyBoardViewManager.m
+END
+UIKeyBoardViewFinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper/UIKeyBoardViewFinder.h
+END
+UIKeyboardObserveManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper/UIKeyboardObserveManager.m
+END
+UIKeyBoardViewFinder.m
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/hsbc/ULI/!svn/ver/17/trunk/Sources/main/apps/uli-front/uli-front-ios/LIGHTinvesting/LIGHTinvesting/Sources/Helpers/KeyBoardHelper/UIKeyBoardViewFinder.m
+END

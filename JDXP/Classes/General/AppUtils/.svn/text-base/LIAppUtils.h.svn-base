@@ -1,0 +1,101 @@
+//
+//  LIAppUtils.h
+//  LIGHTinvesting
+//
+//  Created by Deng on 15/6/30.
+//  Copyright (c) 2015年 Hundsun. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
+#import "LIAttributeConfig.h"
+#import "LILoginReformer.h"
+#import "LIJSONKit.h"
+#import "LIUserManager.h"
+#import "LIHttpClient.h"
+#import "HsReachability.h"
+#import "LINotificationUtils.h"
+#import "HsCryption.h"
+
+
+@interface LIAppUtils : NSObject
+
+// 获取颜色 16进制
++ (UIColor *)colorFromRGB:(NSInteger)rgbValue;
++ (UIColor *)colorFromRGB:(NSInteger)rgbValue theAlpha:(CGFloat)alpha;
+
+// 设置字体
++ (UIFont *)helveticaFont:(CGFloat)fontSize;
++ (UIFont *)helveticaBoldFont:(CGFloat)fontSize;
+
+// 判断是否为空
++ (BOOL)judgeStrIsEmpty:(NSString *)str;
+// 过滤null和nil
++ (NSString *)filterNull:(NSString *)str;
+// 字符串只允许字母和数字
++ (BOOL)judgeCharacterInString:(NSString *)string;
+// 判断密码长度 6-20
++ (BOOL)judgePasswordLength:(NSString *)string;
+// 判断是否有效手机号码
++ (BOOL)isMobileNumber:(NSString *)mobileNumString;
+// 判断是否有效银行卡
++ (BOOL)isIDCardNumber:(NSString *)value;
+// 判断是否有效邮箱
++ (BOOL)isEmailValid:(NSString *)email;
+// 账号昵称 黑名单
++ (BOOL)stringsRegexWith:(NSString *)string;
+// Emoji表情禁止
++ (BOOL)stringContainsEmoji:(NSString *)string;
+// 字符串中是否包含英文字母
++(BOOL)isContainEnglishLetters:(NSString *)string;
+
+
+// 弹窗显示
++ (void)showAlertViewWithTitle:(NSString *)title message:(NSString *)messag;
+// 启动菊花和文字
++ (void)startLoadIng:(NSString *)text;
+// 启动菊花加载提示
++ (void)startLoadIng;
+// 关闭菊花加载指示
++ (void)hideLoadIng;
+// 成功提醒带图片 自动关闭
++ (void)showLoadSuceess:(NSString *)text;// 加载成功处理
+// 失败提示带图片 自动关闭
++ (void)showLoadFailed:(NSString *)text;
+// 普通信息提示  自动关闭
++ (void)showLoadInfo:(NSString *)text;   // 弹窗信息提示
+
+
+// 处理复杂文字
++ (NSMutableAttributedString *)handleText:(NSString *)originalStr
+                               chanageStr:(NSString *)changeStr
+                                 withFont:(UIFont *)font
+                                textColor:(UIColor *)textColor
+                              lineSpacing:(CGFloat)space;
+
++ (NSMutableAttributedString *)handleText:(NSString *)originalStr
+                              chanageStr1:(NSString *)changeStr1
+                              chanageStr2:(NSString *)changeStr2
+                                withFont1:(UIFont *)font1
+                               textColor1:(UIColor *)textColor1
+                                withFont2:(UIFont *)font2
+                               textColor2:(UIColor *)textColor2;
+
+//网络检测
++ (NetworkStatus)currentNetworkStatus;
++ (NSString *)currentNetworkStatusString;
+
+// 判读用户是否开启了相册权限
++ (void)checkAuthorizatePhotoAlbum:(void(^)(BOOL success))block;
+// 判读用户是否开启了相机权限，同时判断相册权限
++ (void)checkAuthorizateCamera:(void(^)(BOOL cameraAuthSuccess, BOOL albumAuthSuccess))block;
+
+// NSString 转换成 CGFloat
++ (CGFloat)floatValueOfString:(NSString *)str;
+// url 加载图片
++ (void)loadImageInView:(id)view withUrl:(NSString *)url;
+
+@end

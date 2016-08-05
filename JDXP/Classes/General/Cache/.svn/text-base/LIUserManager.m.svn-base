@@ -1,0 +1,337 @@
+//
+//  LIUserManager.m
+//  LIGHTinvesting-leader
+//
+//  Created by Deng on 15/7/27.
+//  Copyright (c) 2015年 hundsun. All rights reserved.
+//
+
+#import "LIUserManager.h"
+#import "UtilsMacro.h"
+#import "LIAppUtils.h"
+
+#import "YTKKeyValueStore.h"
+
+@interface LIUserManager ()
+
+@property (strong, nonatomic) YTKKeyValueStore *valueStore;
+
+@end
+
+@implementation LIUserManager
+
++ (LIUserManager *)getInstance {
+    static dispatch_once_t onceToken;
+    static LIUserManager *instance = nil;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+        instance.valueStore = [[YTKKeyValueStore alloc] initDBWithName:@"lgdatastore.db"];
+        [instance.valueStore createTableWithName:LI_CACHE_TABLE];
+    });
+    
+    return instance;
+}
+
+- (BOOL)isAlreadyLogin {
+    if ([self getUserInfo] == nil || [[self getUserInfo] isEqual:@""]) {
+        return NO;
+    }
+    
+    return YES;
+}
+
+- (BOOL)isBindTradeAccount {
+    if ([self getFundAccountInfo] == nil || [[self getFundAccountInfo] isEqual:@""]) {
+        return NO;
+    }
+    
+    return YES;
+}
+
+// 用户当前状态 0：没有跟投也没有领投，1：领投，2：跟投
+- (CurrentState)userCurrentState {
+    if (![[self getCombinationId] isEqualToString:@"0"] && ![LIAppUtils judgeStrIsEmpty:[self getCombinationId]]) {
+        return CurrentState_Leader;
+    }else if (![[self getFollowedCombinationId] isEqualToString:@"0"] && ![LIAppUtils judgeStrIsEmpty:[self getFollowedCombinationId]]) {
+        return CurrentState_Follower;
+    }else {
+        return CurrentState_Ordinary;
+    }
+}
+
+- (void)clearUserInfo {
+    [self.valueStore clearTable:LI_CACHE_TABLE];
+}
+
+#pragma mark - 公用用户信息
+
+- (void)saveUserInfo:(NSDictionary *)userInfo {
+    assert(userInfo);
+    [self.valueStore putObject:userInfo withId:LI_USER_INFO intoTable:LI_CACHE_TABLE];
+}
+
+- (NSDictionary *)getUserInfo {
+    return [self.valueStore getObjectById:LI_USER_INFO fromTable:LI_CACHE_TABLE];
+}
+
+- (void)saveCurrentUserId:(NSString *)currentUserId {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:currentUserId forKey:@"client_id"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getCurrentUserId {
+    return [[self getUserInfo] objectForKey:@"client_id"];
+}
+
+- (void)saveAccessToken:(NSString *)accessToken {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:accessToken forKey:@"access_token"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getAccessToken {
+    return [LIAppUtils filterNull:[[self getUserInfo] objectForKey:@"access_token"]];
+}
+
+- (void)saveNickName:(NSString *)nickName {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:nickName forKey:@"nick_name"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getNickName {
+    return [[self getUserInfo]objectForKey:@"nick_name"];
+}
+
+- (void)savePhoneNumber:(NSString *)phoneNumber {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:phoneNumber forKey:@"mobile_tel"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getPhoneNumber {
+    return [[self getUserInfo] objectForKey:@"mobile_tel"];
+}
+
+- (void)saveSignature:(NSString *)signature {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:signature forKey:@"signature"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getSignature {
+    return [[self getUserInfo] objectForKey:@"signature"];
+}
+
+- (void)saveEmail:(NSString *)email {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:email forKey:@"email"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getEmail {
+    return [[self getUserInfo] objectForKey:@"email"];
+}
+
+- (void)saveHeadPictureUrl:(NSString *)headPictureUrl {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:headPictureUrl forKey:@"ltb_headpic"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getHeadPictureUrl {
+    return [[self getUserInfo] objectForKey:@"ltb_headpic"];
+}
+
+- (void)saveCombinationId:(NSString *)combinationId {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:combinationId forKey:@"current_combi_id"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getCombinationId {
+    return [[self getUserInfo] objectForKey:@"current_combi_id"];
+}
+
+- (void)saveFollowedCombinationId:(NSString *)followedCombinationId {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:followedCombinationId forKey:@"current_follow_combi_id"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getFollowedCombinationId {
+    return [[self getUserInfo] objectForKey:@"current_follow_combi_id"];
+}
+
+- (void)saveFundAccountInfo:(NSDictionary *)fundAccountInfo {
+    NSMutableArray *accountList = [[self getFundAccountList] mutableCopy];
+    if (accountList.count > 0) {
+        [accountList replaceObjectAtIndex:0 withObject:fundAccountInfo];
+    }else {
+        [accountList addObject:fundAccountInfo];
+    }
+    [self saveFundAccountList:accountList];
+}
+
+- (NSDictionary *)getFundAccountInfo {
+    NSDictionary *temp = nil;
+    if ([self getFundAccountList].count > 0) {
+        temp = [[self getFundAccountList] objectAtIndex:0];
+    }
+    return temp;
+}
+
+- (void)saveFundAccountList:(NSArray *)fundAccountList {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:fundAccountList forKey:@"fund_acct_list"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSArray *)getFundAccountList {
+    return [[self getUserInfo] objectForKey:@"fund_acct_list"];
+}
+
+- (void)saveGender:(NSNumber *)gender {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:gender forKey:@"gender"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSNumber *)getGender {
+    return [[self getUserInfo] objectForKey:@"gender"];
+}
+
+- (void)saveStockAge:(NSNumber *)stockAge {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:stockAge.description forKey:@"stock_age"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSNumber *)getStockAge {
+    return [[self getUserInfo] objectForKey:@"stock_age"];
+}
+
+- (void)saveArea:(NSString *)area {
+    NSMutableDictionary *userInfo = [[self getUserInfo] mutableCopy];
+    if (userInfo) {
+        [userInfo setObject:area forKey:@"area"];
+        [self saveUserInfo:userInfo];
+    }
+}
+
+- (NSString *)getArea {
+    return [[self getUserInfo] objectForKey:@"area"];
+}
+
+#pragma mark - 交易自选
+
+// 原始k线指标类型
+- (void)saveKLineTag:(NSDictionary *)dic {
+    assert(dic);
+    [self.valueStore putObject:dic withId:LI_KLine_TAG intoTable:LI_CACHE_TABLE];
+}
+- (NSDictionary *)getKLineTag {
+    return [self.valueStore getObjectById:LI_KLine_TAG fromTable:LI_CACHE_TABLE];
+}
+
+// 自选股票
+- (void)saveOptionalStocks:(NSMutableArray *)array {
+    assert(array);
+    [self.valueStore putObject:array withId:LI_OPTIONAL_STOCKS intoTable:LI_CACHE_TABLE];
+}
+- (NSMutableArray *)getOptionalStocks {
+    return [self.valueStore getObjectById:LI_OPTIONAL_STOCKS fromTable:LI_CACHE_TABLE];
+}
+
+// 自选组合
+- (void)saveOptionalCombinations:(NSMutableArray *)array {
+    assert(array);
+    [self.valueStore putObject:array withId:LI_OPTIONAL_COMBINATIONS intoTable:LI_CACHE_TABLE];
+}
+- (NSMutableArray *)getOptionalCombinations {
+    return [self.valueStore getObjectById:LI_OPTIONAL_COMBINATIONS fromTable:LI_CACHE_TABLE];
+}
+
+// 个股持仓
+- (void)saveSingleStocks:(NSMutableArray *)array {
+    assert(array);
+    [self.valueStore putObject:array withId:LI_SINGLE_STOCKS intoTable:LI_CACHE_TABLE];
+}
+- (NSMutableArray *)getSingleStocks{
+    return [self.valueStore getObjectById:LI_SINGLE_STOCKS fromTable:LI_CACHE_TABLE];
+}
+
+// 组合持仓
+-(void)saveCurrentCombinationStocks:(NSMutableArray *)array{
+    assert(array);
+    [self.valueStore putObject:array withId:LI_CURRENT_COMBI_STOCKS intoTable:LI_CACHE_TABLE];
+}
+-(NSMutableArray *)getCurrentCombinationStocks{
+    return [self.valueStore getObjectById:LI_CURRENT_COMBI_STOCKS fromTable:LI_CACHE_TABLE];
+}
+
+// 跟投,领投组合（编号，名称，组合盈亏金额，组合盈亏比例）
+- (void)saveCurrentCombination:(NSDictionary *)dic {
+    assert(dic);
+    [self.valueStore putObject:dic withId:LI_CURRENT_COMBI intoTable:LI_CACHE_TABLE];
+}
+- (NSDictionary *)getCurrentCombination {
+    return [self.valueStore getObjectById:LI_CURRENT_COMBI fromTable:LI_CACHE_TABLE];
+}
+
+// 键盘精灵搜索记录
+- (void)saveSearchHistoryStocks:(NSMutableArray *)array {
+    assert(array);
+    [self.valueStore putObject:array withId:LI_SEARCHISTORY_STOCKS intoTable:LI_CACHE_TABLE];
+}
+- (NSMutableArray *)getSearchHistoryStocks {
+    return [self.valueStore getObjectById:LI_SEARCHISTORY_STOCKS fromTable:LI_CACHE_TABLE];
+}
+
+
+
+#pragma mark -
+// 存储总资产
+- (void)saveTotalFund:(NSDictionary *)dic{
+    assert(dic);
+    [self.valueStore putObject:dic withId:LI_USER_TOTAL_FUND intoTable:LI_CACHE_TABLE];
+}
+- (NSDictionary *)getTotalFund{
+    return [self.valueStore getObjectById:LI_USER_TOTAL_FUND fromTable:LI_CACHE_TABLE];
+}
+
+// 领投人N系数
+- (void)saveLeaderModulus:(NSString *)leaderModulus {
+    assert(leaderModulus);
+    [self.valueStore putString:leaderModulus withId:LI_USER_LEADER_MODULUS intoTable:LI_CACHE_TABLE];
+}
+- (NSString *)getLeaderModulus {
+    return [self.valueStore getStringById:LI_USER_LEADER_MODULUS fromTable:LI_CACHE_TABLE];
+}
+
+@end

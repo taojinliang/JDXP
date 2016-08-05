@@ -1,0 +1,221 @@
+//
+//  LIHttpClient.m
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/7/25.
+//  Copyright (c) 2015年 Hundsun. All rights reserved.
+//
+
+#import "LIHttpClient.h"
+#import "AFNetworking.h"
+#import "AppDelegate.h"
+#import "LIAppUtils.h"
+#import "HsQuoteManager.h"
+#import "H5DataCenterFactory.h"
+#import "H5DataCenter.h"
+#import "HsRealtimeViewModel.h"
+#import "HsStock.h"
+#import "LIConfiguration.h"
+#import "LIAppMacro.h"
+#import "NotificationMacro.h"
+#import "LILoginViewController.h"
+
+@implementation LIHttpClient
+
+
++(LIHttpClient *)shareManager{
+    //使用单一线程，解决网络同步请求的问题
+    static LIHttpClient* shareInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        shareInstance = [[LIHttpClient alloc] init];
+    });
+    return shareInstance;
+}
+
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
+#pragma mark -
+
+-(void)sendRequest:(NSString *)functionID  withDictionary:(NSDictionary *)reqdict completionHandler:(void (^)(NSInteger errorNo,NSDictionary *dict)) block
+{
+    if (![NSJSONSerialization isValidJSONObject:reqdict]) {
+        NSMutableDictionary *resp = [NSMutableDictionary dictionaryWithCapacity:2];
+        [resp setObject:[NSNumber numberWithInteger:9999] forKey:kLIErrorKey_No];
+        [resp setObject:@"reqdict is not a valid json object" forKey:kLIErrorKey_ErrorInfo];
+        block(9999,resp);
+    }
+
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFCompoundResponseSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    if (IsAnalogData) {
+        [manager.requestSerializer setValue:@"1" forHTTPHeaderField:@"MockRequest"];
+    }
+    
+    NSString *theURL = [NSString stringWithFormat:@"%@%@", [[LIConfiguration shareManager] stationList], functionID];
+    NSLog(@"theURL=%@", theURL);
+    [manager POST:theURL parameters:reqdict success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *jsonData = [operation.responseString JSONObject];
+        NSString *errorNo = [NSString stringWithFormat:@"%@",[jsonData objectForKey:kLIErrorKey_No]];
+        if ( [@"0" isEqualToString:errorNo] && ![LIAppUtils isContainEnglishLetters:errorNo]) {
+            block(0,jsonData);
+        }else if ([@"88880020" isEqualToString:errorNo]) {
+            [self handleReSignIn];
+            block([errorNo integerValue],jsonData);
+        }else{
+            //查询跟投组合信息时,查询当前组合,查询绑定的交易账号,查询总资产时，不显示错误
+            if (!([LI_COMBINATION_INFORMATION isEqualToString:functionID] ||
+                  [LI_CURRENT_GROUP isEqualToString:functionID] ||
+                  [LI_USER_QUEEY_TRADING_ACCOUNT isEqualToString:functionID] ||
+                  [LI_USER_QUERY_TOTAL_ASSETS isEqualToString:functionID]||
+                  [LI_BIND_BANK_CARD_LIST isEqualToString:functionID] ||
+                  [LI_QUERY_PORTFOLIO_CREAT_INFO isEqualToString:functionID] ||
+                  [LI_COMBINATION_CONSTRAINT isEqualToString:functionID] ||
+                  [LI_OPTIONAL_COMBI_GET isEqualToString:functionID] ||
+                  [LI_OPTIONAL_STOCK_GET isEqualToString:functionID] ||
+                  [LI_USER_COMBI_STOCK_LIST isEqualToString:functionID])) {
+                [LIAppUtils showLoadInfo:[jsonData objectForKey:kLIErrorKey_ErrorInfo]];
+            }
+                
+            if (![LIAppUtils isContainEnglishLetters:errorNo]) {
+                block([errorNo integerValue],jsonData);
+            }else{
+                //如果含有字母，将错误码设为-1
+                block(-1,jsonData);
+            }
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [LIAppUtils showLoadInfo:[[operation.responseString JSONObject] objectForKey:kLIErrorKey_ErrorInfo]];
+        block(error.code,[operation.responseString JSONObject]);
+    }];
+ 
+}
+
+- (void)handleReSignIn{
+    [[LIUserManager getInstance] clearUserInfo];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LI_NOTIFICATION_QUIT object:nil];
+    UIWindow *window = [[UIApplication sharedApplication].delegate window];
+    UITabBarController *tabBarController = (UITabBarController *)window.rootViewController;
+    tabBarController.selectedIndex = 0;
+    UINavigationController *nav = (UINavigationController *)tabBarController.viewControllers[tabBarController.selectedIndex];
+    [nav popToRootViewControllerAnimated:NO];
+    LILoginViewController *loginVC = [[LILoginViewController alloc] init];
+    loginVC.delegate = (id<LILoginInViewControllerDelegate>)nav.topViewController;
+    UINavigationController *nav0 = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    [nav.topViewController presentViewController:nav0 animated:YES completion:nil];
+    [LIAppUtils showLoadInfo:@"权限过期，请重新登录"];
+}
+
+-(void)sendRequest:(NSString *)requestUrl  completionHandler:(void (^)(NSInteger errorNo,NSDictionary *dict)) block{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFCompoundResponseSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager GET:requestUrl parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *jsonData = [operation.responseString JSONObject];
+        NSString *errorNo = [NSString stringWithFormat:@"%@",[jsonData objectForKey:kLIErrorKey_No]];
+        if ( [@"0" isEqualToString:errorNo]) {
+            block(0,jsonData);
+        }else{
+            block([errorNo integerValue],jsonData);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        [LIAppUtils showLoadInfo:[[operation.responseString JSONObject] objectForKey:kLIErrorKey_ErrorInfo]];
+        block(error.code,[operation.responseString JSONObject]);
+    }];
+}
+
+#pragma mark - 交易查询股票信息
++ (void)requestStockInfoWithCompletion:(NSString *)queryString Completion:(HTTP_StockInfoCompletion)completion{
+    //全部支持(上证A股，深证A股，上证ETF，深证ETF...)
+    NSMutableDictionary *dic = [[HsQuoteManager sharedManager] readMarketInfos];
+    NSMutableArray *codeTypes = [NSMutableArray arrayWithCapacity:50];
+//    for (id key in dic) {
+//        [codeTypes addObject:key];
+//    }
+    
+    //遍历
+    [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        [codeTypes addObject:key];
+    }];
+    //按字母排列
+    [codeTypes sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    //逆序
+    NSArray * Types = [[codeTypes reverseObjectEnumerator] allObjects];
+
+    [[H5DataCenterFactory getH5DataCenter] queryStocks:queryString codeTypes:Types withHandleBlock:^(id object) {
+        if (object==nil) {
+            return;
+        }
+        //因为指定股票代码确定的股票只有一支，修改object返回为nsmutableArray的bug
+        if (object != nil && [(NSMutableArray *)object count] > 0) {
+            for (NSInteger i = 0; i < [(NSMutableArray *)object count]; i++) {
+                HsStock *stock = object[i];
+                //只返回沪深的，不返回<<HsStock: 0xb5bfc70> StockName:上证指数 StockCode:000001 CodeType:XBHS.ZS>类似
+                if ([stock.codeType hasPrefix:@"XSHG"] || [stock.codeType hasPrefix:@"XSHE"]) {
+                    completion(object[i],nil);
+                    break;
+                }
+            }
+        }
+    }];
+}
+
+
++ (void)requestStockQuoteInfoWithCompletion:(HsStock *)stock Completion:(HTTP_StockQuoteInfoCompletion)completion{
+    H5DataCenter *h5DC = [H5DataCenterFactory getH5DataCenter];
+    NSArray *stocks = @[stock];
+    [h5DC loadRealtimeList:stocks withHandleBlock:(^(id object){
+        NSMutableArray *stockRealtimes = [[NSMutableArray alloc] init];;
+        for (HsStock *stock in stocks) {
+            HsRealtimeViewModel *viewModel = [[HsRealtimeViewModel alloc] init];
+            viewModel.stock = stock;
+            [stockRealtimes addObject:viewModel];
+        }
+            
+        if (object && [object isKindOfClass:[NSArray class]]) {
+            for (HsStockRealtime *realtime in object) {
+                for (HsRealtimeViewModel *viewModel in stockRealtimes) {
+                    if ([viewModel.stock.stockCode isEqualToString:realtime.stock.stockCode] &&[viewModel.stock.codeType isEqualToString:realtime.stock.codeType]) {
+                        viewModel.realtime = realtime;
+                        break;
+                    }
+                }
+            }
+            completion(stockRealtimes,nil);
+        }
+            
+    })];
+}
+
++ (void)requestStocksQuoteInfoWithCompletion:(NSArray *)stocks Completion:(HTTP_StockQuoteInfoCompletion)completion{
+    H5DataCenter *h5DC = [H5DataCenterFactory getH5DataCenter];
+    [h5DC loadRealtimeList:stocks withHandleBlock:(^(id object){
+        NSMutableArray *stockRealtimes = [[NSMutableArray alloc] init];;
+        for (HsStock *stock in stocks) {
+            HsRealtimeViewModel *viewModel = [[HsRealtimeViewModel alloc] init];
+            viewModel.stock = stock;
+            [stockRealtimes addObject:viewModel];
+        }
+        
+        if (object && [object isKindOfClass:[NSArray class]]) {
+            for (HsStockRealtime *realtime in object) {
+                for (HsRealtimeViewModel *viewModel in stockRealtimes) {
+                    if ([viewModel.stock.stockCode isEqualToString:realtime.stock.stockCode] &&[viewModel.stock.codeType isEqualToString:realtime.stock.codeType]) {
+                        viewModel.realtime = realtime;
+                        break;
+                    }
+                }
+            }
+            completion(stockRealtimes,nil);
+        }
+        
+    })];
+}
+
+@end

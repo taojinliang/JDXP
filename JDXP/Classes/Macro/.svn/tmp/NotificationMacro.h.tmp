@@ -1,0 +1,50 @@
+//
+//  NotificationMacro.h
+//  LIGHTinvesting
+//
+//  Created by MacBookPro on 15/11/20.
+//  Copyright © 2015年 Hundsun. All rights reserved.
+//
+//NotificationMacro.h 里放的是通知相关的宏定义
+
+#ifndef NotificationMacro_h
+#define NotificationMacro_h
+
+
+// 客户端退出
+static NSString *const LI_NOTIFICATION_QUIT = @"LI_Notification_quit";
+// 仓位复核
+static NSString *const LI_NOTIFICATION_REVIEW_ADJUST = @"LI_REVIEW_ADJUST";
+// 更新我的组合界面
+static NSString *const LI_NOTIFICATION_MY_COMBINATION = @"LI_MY_COMBINATION";
+
+
+// 登陆成功通知
+#define  kHsNotificationAppLogin               @"appLogin"
+
+// 行情定时刷新通知
+#define  kHsNotificationQuoteRefresh  @"quoteRefresh"
+// 排序类型改变通知
+#define  kHsNotificationSortRefresh   @"sortRefresh"
+// 买入通知
+#define  kHsNotificationTradeBuy      @"tradeBuy"
+// 卖出通知
+#define  kHsNotificationTradeSale     @"tradeSale"
+// 交易 ： 价格
+#define  kHsNotificationTradeBussinessPrice    @"tradeBussinessPrice"
+// 交易 ： 搜索
+#define  kHsNotificationTradeStockChanged      @"tradeStockChanged"
+// 交易 ： 五档窗口
+#define  kHsNotificationTradeBidOffer          @"tradeBidOffer"
+// 持仓更新
+#define  kHsNotificationHoldingRefresh         @"HoldingRefresh"
+// 跳转到我跟投的组合
+#define  kHsNotificationGotoFollowCombi         @"GotoFollowCombi"
+// 跳转到我创建的组合
+#define  kHsNotificationGotoCreateCombi         @"GotoCreateCombi"
+//跳转到组合个股行情
+#define  kHsNotificationGotoCombiStockQuote     @"GotoCombiStockQuote"
+//影响组合，个股持仓操作：创建组合，跟投组合，退跟组合，买入个股，卖出个股，调仓记录
+#define  kHsNotificationTradeSomething          @"TradeSomething"
+
+#endif /* NotificationMacro_h */

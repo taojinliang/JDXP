@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss
+END
+ZXRSSPair.m
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSPair.m
+END
+ZXRSSUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSUtils.h
+END
+ZXRSSFinderPattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSFinderPattern.h
+END
+ZXRSSUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSUtils.m
+END
+ZXAbstractRSSReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXAbstractRSSReader.h
+END
+ZXRSSDataCharacter.h
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSDataCharacter.h
+END
+ZXRSS14Reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSS14Reader.h
+END
+ZXRSSFinderPattern.m
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSFinderPattern.m
+END
+ZXAbstractRSSReader.m
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXAbstractRSSReader.m
+END
+ZXRSSDataCharacter.m
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSDataCharacter.m
+END
+ZXRSSPair.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSSPair.h
+END
+ZXRSS14Reader.m
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/oned/rss/ZXRSS14Reader.m
+END

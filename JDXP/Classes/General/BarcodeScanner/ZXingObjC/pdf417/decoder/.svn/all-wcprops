@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder
+END
+ZXPDF417DetectionResult.m
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DetectionResult.m
+END
+ZXPDF417BoundingBox.m
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417BoundingBox.m
+END
+ZXPDF417DecodedBitStreamParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DecodedBitStreamParser.m
+END
+ZXPDF417DetectionResultRowIndicatorColumn.m
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DetectionResultRowIndicatorColumn.m
+END
+ZXPDF417ScanningDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417ScanningDecoder.h
+END
+ZXPDF417DetectionResultColumn.h
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DetectionResultColumn.h
+END
+ZXPDF417ScanningDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417ScanningDecoder.m
+END
+ZXPDF417CodewordDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417CodewordDecoder.h
+END
+ZXPDF417BarcodeValue.h
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417BarcodeValue.h
+END
+ZXPDF417DetectionResultColumn.m
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DetectionResultColumn.m
+END
+ZXPDF417BarcodeMetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417BarcodeMetadata.h
+END
+ZXPDF417CodewordDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417CodewordDecoder.m
+END
+ZXPDF417BarcodeValue.m
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417BarcodeValue.m
+END
+ZXPDF417BarcodeMetadata.m
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417BarcodeMetadata.m
+END
+ZXPDF417Codeword.h
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417Codeword.h
+END
+ZXPDF417Codeword.m
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417Codeword.m
+END
+ZXPDF417DetectionResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DetectionResult.h
+END
+ZXPDF417BoundingBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417BoundingBox.h
+END
+ZXPDF417DecodedBitStreamParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DecodedBitStreamParser.h
+END
+ZXPDF417DetectionResultRowIndicatorColumn.h
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/bank/DepFour/PB3.1/!svn/ver/27922/%E6%97%A0%E7%BA%BF%E4%BA%A7%E5%93%81V3.1/trunk/Sources/IOS/HSBrowser_css/BreezeLib/BreezeLib/Util/BarcodeScanner/ZXingObjC/pdf417/decoder/ZXPDF417DetectionResultRowIndicatorColumn.h
+END
